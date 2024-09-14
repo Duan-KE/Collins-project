@@ -40,13 +40,16 @@
             <div class="med-container">
                 <div class="column-left">
                     <h1>You Picture it  <span style="color: goldenrod;">...</span> <br> We Brand it  <span style="color: goldenrod;">!!!</span></h1>
-                    <p>We offer Best Services to give you <br> Gifts worth  your smiles 😇😊 <br> Because Cute Brands Win Hearts ❤️.</p>
-                    <br><br>
+                    <p>We offer Best Services to give you Gifts worth  your smiles 😇😊 <br> Because Cute Brands Win Hearts ❤️.</p>
+                    <br>
                     <p>Creating Smart Solutions for Your <br> Brand is our top priority.</p>
                 </div>
             </div>
             <div class="column-right">
-                <img src="./DUAN.jpg" alt="CATALOGUE" loading="lazy" width="100%" height="500px" loading="lazy">
+                <div style="text-align:center"> 
+                    <video id="video1" > 
+                    <source src="video.mp4" type="video/mp4" controls></video>
+                    </div>
             </div>
         </div>
 
@@ -60,7 +63,8 @@
                 <button class="btnn">Book Now</button>
                 <!-- This is a play icon using the triangle (►) character -->
                 <div class="play-video-container">        
-                    <div class="play-icon">&#9658;</div>
+                    <div class="play-icon" play()>&#9658;</div>
+                    <button onclick="play()">Play/Pause</button> 
                     <span>Play Video</span>
                 </div>
             </div>               
@@ -68,12 +72,12 @@
         
        <!--REVIEW-->
         <div class="flex-container">
-            <!--<div id="">-->
-            <div class="stat"><h3>95%</h3><p>Work <br> Efficiency</p></div>
+          
+            <div class="stat"><h3 class="counter" data-target="95">0</h3>%<p>Work <br> Efficiency</p></div>
             <div class="stats"><h3>1,500+</h3>Loyal<br> Customers</div>
             <div class="stats"><h3>3,000+</h3>Delivered<br> Locations<br> Countrywide</div>  
             <div class="stats"><h3>100%</h3>Guaranteed<br> Customer<br> Satisfaction</div>
-            <!--</div>-->
+          
         </div>        
         <section>
 
@@ -144,7 +148,7 @@
        </section>
     
         <!--Third Bar-->
-        <h2 style="color: rgb(3, 142, 255);margin-left: 40px;font-weight: bold; margin-bottom: 20px;">Special Offers & Huge Discounts on;</h2>
+        <h2 style="color: rgb(5, 5, 5);margin-left: 40px;font-weight: bold; margin-bottom: 20px;">Special Offers & Huge Discounts on;</h2>
         <div class="services-section2">
             <div class="services-container2">
                 <div class="service-box2">
@@ -347,6 +351,33 @@
             <div class="footer-bottom">
                 <p>© Designed by Duan Collince All rights reserved 2024.</p>
             </div>
-        </footer>                                               
+        </footer>    
+        <script> 
+        // Function to animate numbers
+function animateValue(id, start, end, duration) {
+    const obj = document.getElementById(id);
+    const range = end - start;
+    const increment = end > start ? 1 : -1;
+    const stepTime = Math.abs(Math.floor(duration / range));
+    let current = start;
+    const timer = setInterval(() => {
+        current += increment;
+        obj.textContent = current + (id === "efficiency" || id === "satisfaction" ? "%" : "+");
+        if (current === end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+// Trigger animations when the page loads
+window.onload = function() {
+    animateValue("efficiency", 0, 95, 2000);  // Animate to 95% in 2 seconds
+    animateValue("customers", 0, 1500, 3000); // Animate to 1,500+ in 3 seconds
+    animateValue("locations", 0, 3000, 3000); // Animate to 3,000+ in 3 seconds
+    animateValue("satisfaction", 0, 100, 2000); // Animate to 100% in 2 seconds
+};
+</script>
+            }
+                                                   
     </body>
 </Html>
