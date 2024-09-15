@@ -1,30 +1,5 @@
 
-/* Styles for large screens */
-@media only screen and (max-width: 980px) {
-    /* Flexbox for content sections */
-    .med1, .services-section, .services-section1, .services-section2, .testimonials-section, .steps-container, .Partners-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    /* Responsiveness for text and images */
-    .column-left, .column-right, .service-box, .service-box1, .service-box2, .testimonial-box, .patner-card, .step {
-        flex-basis: 100%; /* Stack them by default for mobile */
-        padding: 15px;
-        text-align: center;
-    }
-    
-    /* Grid layout for services and partners */
-    .services-container, .services-container1, .services-container2, .Partners {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-        gap: 20px;
-    }
-    }
-    
+
      body{
         background-color: rgb(236, 253, 253);
         margin:20px 50px;
@@ -398,7 +373,9 @@
     /*<!--First Bar-->*/
     .services-section {
         text-align: center;
-        padding: 30px 0px;   
+        padding: 30px 0px;  
+        justify-content: center; 
+        width: 100%;
     }
     
     .services-section h3 {
@@ -1063,7 +1040,7 @@
         text-align: center;
         padding: 50px;
         background-color: #fff;
-        margin-top: 50px;
+        margin-top: 250px;
         height: 230px;
         justify-content: center;
     }
