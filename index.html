@@ -39,15 +39,15 @@
             <div class="med1">
             <div class="med-container">
                 <div class="column-left">
-                    <h1>You Picture it  <span style="color: goldenrod;">...</span> <br> We Brand it  <span style="color: goldenrod;">!!!</span></h1>
-                    <p>We offer Best Services to give you Gifts worth  your smiles 😇😊 <br> Because Cute Brands Win Hearts ❤️.</p>
-                    <br>
-                    <p>Creating Smart Solutions for Your <br> Brand is our top priority.</p>
+                    <h1>You Picture it   <br> We Brand it  </h1>
+                    <p>We offer Best Services to give you Gifts worth  your smiles <br> Because Cute Brands Win Hearts .</p>
+                    
+                    <p>Creating Smart Solutions for Your Brand is our top priority.</p>
                 </div>
             </div>
             <div class="column-right">
                 <div style="text-align:center"> 
-                    <video id="video1" > 
+                    <video id="video1" controls > 
                     <source src="./video/video.mp4" type="video/mp4">
                     </video>
                     </div>
@@ -65,7 +65,7 @@
                 <!-- This is a play icon using the triangle (►) character -->
                 <div class="play-video-container">        
                     <div class="play-icon" play()>&#9658;</div>
-                    <button onclick="play()">Play/Pause</button> 
+                    <button id="playButton">Play Video</button>
                   
                 </div>
             </div>               
@@ -73,8 +73,7 @@
         
        <!--REVIEW-->
         <div class="flex-container">
-          
-            <div class="stat"><h3>95%</h3><p>Work <br> Efficiency</p></div>
+            <div class="stat"><h3>95<h>%</h></h3><p>Work <br> Efficiency</p></div>
             <div class="stats"><h3>1,500+</h3>Loyal<br> Customers</div>
             <div class="stats"><h3>3,000+</h3>Delivered<br> Locations<br> Countrywide</div>  
             <div class="stats"><h3>100%</h3>Guaranteed<br> Customer<br> Satisfaction</div>
@@ -351,18 +350,55 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© Designed by Duan Collince All rights reserved 2024.</p>
+                <p>© Copywright 2024 Designed by Duan Collince All rights reserved .</p>
             </div>
         </footer>    
-        <script> 
-  <script> 
-var myVideo = document.getElementById("video1"); 
+      
+         <!-- JavaScript to handle button click -->
+    <script>
+       var video = document.getElementById('video1');
+        var button = document.getElementById('playButton');
 
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-</script>
+        button.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+                button.textContent = 'Pause Video';
+            } else {
+                video.pause();
+                button.textContent = 'Play Video';
             }
+        });
+    </script>
+    <script src="path/to/your/script.js"></script>
+    <script>
+        function animateNumbers() {
+            const elements = document.querySelectorAll('.stat h3, .stats h3');
+            
+            elements.forEach(el => {
+                const endValue = parseInt(el.textContent.replace(/[^0-9]/g, '')); // Extract numeric part
+                el.textContent = '0'; // Start from 0
+                
+                let currentValue = 0;
+                const increment = Math.ceil(endValue / 100); // Adjust increment step as needed
+                const duration = 10000; // Animation duration in milliseconds
+                const stepTime = duration / (endValue / increment); // Time per step
+                
+                const interval = setInterval(() => {
+                    currentValue += increment;
+                    if (currentValue >= endValue) {
+                        el.textContent = endValue;
+                        clearInterval(interval);
+                    } else {
+                        el.textContent = currentValue;
+                    }
+                }, stepTime);
+            });
+        }
+        
+        // Call the function when the page is loaded
+        document.addEventListener('DOMContentLoaded', animateNumbers);
+        </script>
+        
                                                    
     </body>
 </Html>

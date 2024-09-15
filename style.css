@@ -209,6 +209,11 @@
         margin-top: 50px;
         margin-left: 100px;
         align-content:right;
+        max-width: fit-content;
+ 
+    }
+    #video1{
+      max-height: 1000px;
     }
     .column-left{
        padding-right: 100px;
@@ -216,7 +221,7 @@
       margin-top: 60px;
     }
     .column-left h1{
-        font-size: 60px;
+        font-size: 80px;
         color: darkblue;
     
     }
@@ -226,6 +231,7 @@
         margin-top: 30px;
         text-align: left;
         display:flex ;  
+
     }
     .med1{
         display: flex;
@@ -302,6 +308,7 @@
         text-align:center;
         margin-left:60px;
         margin-top: 30px;
+        justify-content: center;
     }
     .stat h3{
         font-weight: bold;
@@ -333,21 +340,7 @@
 }
 
 
-/* Media Query for Large Screens */
-@media (min-width: 1200px) {
-    .stats-container {
-      max-width: 70%;
-    }
-  
-    .stat h2 {
-      font-size: 3em;
-    }
-  
-    .stat p {
-      font-size: 1.5em;
-    }
-  }
-  
+
   
   /* Media Query for Small Screens (Mobile) */
   @media (max-width: 767px) {
@@ -363,6 +356,7 @@
   
     .stat p {
       font-size: 1em;
+     justify-content: center;
     }
   
     .stat {
@@ -1409,6 +1403,7 @@ footer {
     padding: 10px;
     background-color: #e9ecef;
     font-size: 14px;
+    justify-content: center;
 }
 
 /* Large screens (desktops) */
