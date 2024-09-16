@@ -83,7 +83,7 @@
     .signup-container {
       display: flex;
       align-items: center;
-      margin-top: -120px;
+      margin-top: -50px;
       marigin-bottom:10px;
       width: 70%;
     }
@@ -144,7 +144,6 @@
   .signup-container {
       flex-direction: column;
       width: 100%;
-      margin-top: 10px;
   }
 
   .email-input, .signup-button {
@@ -255,8 +254,8 @@
     }
 
     .column-left p{
-        font-size: 30px;
-        font-family: 'Times New Roman';
+        font-size: 25px;
+        font-family:'Arial';
         margin-top: -55px;
         text-align: left;
         display:flex ; 
@@ -343,13 +342,15 @@
     .stat h3{
         font-size: 30px;
         color: black;
-        justify-content: center;
+       text-align: center;
+       margin-left: -40px;
     }
 
     .stats h3{
         font-size: 30px;
-        justify-content: center;
+      align-content: center;
         color: black;
+        margin-left: -70px;
     }
 
     /*<!--First Bar-->*/
@@ -523,7 +524,7 @@
     }
 
     .service-box1 h3{
-        color: white;
+        color: black;
         font-size: 20px;
     }
 
@@ -713,7 +714,7 @@
       }
     
       .step-title {
-        font-size: 10px;
+        font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
         color: black;
