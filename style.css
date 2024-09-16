@@ -20,6 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap:wrap;
       }
       
       .icon img {
@@ -30,6 +31,7 @@
         display: flex;
         list-style: none;
         margin-bottom: 230px;
+        list-style:none;
       }
       
       .menu ul li {
@@ -56,7 +58,7 @@
       .sign .btn {
         background-color: darkblue;
         border: none;
-        padding: 10px 20px;
+        padding: 8px 16px;
         color: white;
         cursor: pointer;
         margin-left: 10px;
@@ -109,7 +111,56 @@
     .signup-button:hover {
       background-color: #333;
     }
-    
+    /* Media Query for Small Screens (Mobile) */
+@media (max-width: 767px) {
+  body {
+      margin: 10px 15px;
+  }
+
+  header {
+      height: auto;
+      padding: 10px;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .menu ul li {
+      margin: 5px 0;
+  }
+
+  .sign {
+      margin-top: 10px;
+      gap: 5px;
+  }
+
+  .signup-container {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .email-input, .signup-button {
+      width: 100%;
+  }
+
+  .actions-container {
+      flex-direction: column;
+  }
+
+  .btn {
+      width: 100%;
+  }
+}
+
+    /*video Actions*/
     .actions-container {
         display: flex;
         align-items: center;
@@ -161,8 +212,6 @@
     .btnn:hover{
         background-color: darkblue;
     }
-
-  
   
 /* Media Query for Small Screens (Mobile) */
 @media (max-width: 467px) {
@@ -369,6 +418,17 @@
         font-family:'Times New Roman';
         text-align: justify;   
     }
+    /* Media Query for Large Screens */
+@media (min-width: 1200px) {
+  .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .services-section h2 {
+      font-size: 3em;
+  }
+}
 
     /* Media Query for Large Screens */
 @media (min-width: 1200px) {
@@ -472,7 +532,6 @@
         margin-bottom: 10px;
         color:black;
     }
-
    
   /* Media Query for Small Screens (Mobile) */
   @media (max-width: 767px) {
@@ -695,7 +754,7 @@
         width: 80%;
         height: 300px;
         margin-right: 150px;
-        margin-top: 50px;
+        margin-top: 80px;
         align-items: right;      
     }
 
@@ -784,7 +843,7 @@
         display: flex;
         padding: 20px 10px;
         align-items:right;
-        margin-top: 0px;  
+        margin-top:0px;  
         justify-content: center;
     }
     .image-placeholder {
@@ -834,7 +893,7 @@
         text-align: center;
         padding: 50px;
         background-color: #fff;
-        margin-top: 250px;
+        margin-top: 50px;
         height: 230px;
         justify-content: center;
     }
