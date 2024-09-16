@@ -40,15 +40,15 @@
             <div class="med-container">
                 <div class="column-left">
                     <h1>You Picture it   <br> We Brand it  </h1>
-                    <p>We offer Best Services to give you Gifts worth  your smiles <br> Because Cute Brands Win Hearts .</p>
+                    <p>We offer Best Services to give you Gifts worth  your smiles <br> Because Cute Brands Win Hearts</p>
                     
                     <p>Creating Smart Solutions for Your Brand is our top priority.</p>
                 </div>
             </div>
             <div class="column-right">
                 <div style="text-align:center"> 
-                    <video id="video1" > 
-                    <source src="./video/video.mp4" type="video/mp4">
+                    <video id="video1" width="100%" > 
+                    <source src="./video/Video2.mp4" type="video/mp4">
                     </video>
                     </div>
             </div>
@@ -56,10 +56,11 @@
 
      <!--sign up-->
      <section>
-            <div class="signup-container">
-                <input type="text" placeholder="Enter your Email">
-                <button class="btn">Sign Up</button>
-            </div>
+        <div class="signup-container">
+            <input type="email" placeholder="Enter your Email" class="email-input">
+            <button class="signup-button">Sign Up</button>
+          </div>
+          
             <div class="actions-container">
                 <button class="btnn">Book Now</button>
                 <!-- This is a play icon using the triangle (►) character -->
@@ -76,10 +77,14 @@
         
        <!--REVIEW-->
         <div class="flex-container">
-            <div class="stat"><h3>95<h></h></h3><p>Work <br> Efficiency</p></div>
-            <div class="stats"><h3>1,500+</h3>Loyal<br> Customers</div>
-            <div class="stats"><h3>3,000+</h3>Delivered<br> Locations<br> Countrywide</div>  
-            <div class="stats"><h3>100%</h3>Guaranteed<br> Customer<br> Satisfaction</div>
+            <div class="stat"><h3>95</span></h3><p>Work <br> Efficiency</p></div>
+            <div class="divider1"></div>
+            <div class="stats"><h3>1,500</h3><p>Loyal<br> Customers</p></div>
+            <div class="divider1"></div>
+            <div class="stats"><h3>3,000</h3><p>Delivered<br> Locations<br> Countrywide</p></div>  
+            <div class="divider1"></div>
+            <div class="stats"><h3>100</h3><p>Guaranteed<br> Customer<br> Satisfaction</p></div>
+         
           
         </div>        
         <section>
@@ -95,9 +100,9 @@
                     <h3>All Branding Services</h3>
                     <p>With specialized  skilled workers and a well Equiped office, we work around the clock to
                          ensure we leave no stone unturned.</p>
-                </div>
+                </div> 
                 <div class="service-box">
-                    <div class="service-icon"><img src=./images/smart.png" alt="smart working" loading="eager" style="width: 80px;border-radius: 90%;"></div>
+                    <div class="service-icon"><img src="./images/smart.png" alt="smart working" loading="eager" style="width: 80px;border-radius: 90%;"></div>
                     <h3>Smart & Affordable</h3>
                     <p>At Duanix media compatibilty of customer's needs for a perfect final product is our motive
                         as well as offering  pocket friendly prices.</p>
@@ -175,15 +180,15 @@
                 <h2 style="color:darkblue; font-size: 35px;">Our Loyal <span style="color: red;"> <strong>Partners</strong></span></h2>
                 <div class="Partners">
                     <div class="patner-card">
-                        <img src="./images/pharis logo.png logo.png" alt="Pharitec Image" style="width: 70px;margin-bottom: 15px;margin-top: 25px;">
-                        <h3 style="margin-top:50px;">Pharis Ifedha</h3>
+                        <img src="./images/pharis logo.png" alt="Pharitec Image" style="width: 70px;margin-bottom: 15px;margin-top: 25px;">
+                        <h3>Pharis Ifedha</h3>
                         <p>Director at Pharitec Photo Mounts and Branding Limited</p>
                     </div>
                     <div class="patner-card">
                         <img src="./images/psam.png" alt="Psam Image" style="width: 100px;">
                         <h3>Samson Musoka</h3>
                         <p>Director at Psam Tours and Travel agency.
-                            He initiates transport & delivery services to various destinations.
+                            for transport & delivery services to various destinations.
                         </p>
                     </div>
                     <div class="patner-card">
@@ -216,7 +221,7 @@
                         <br> <strong>WhatsApp</strong> - 0718315868<br>
                             <strong>Instagram</strong> @duanixMedia<br>
                             <strong>Call/text</strong> - 0718315868.
-                            <p>call Us</p>
+                        
                       </div>
                     </div>
                     <div class="step">
@@ -293,7 +298,7 @@
         </div>  
         <!--Register section-->   
         <div class="register-section">
-            <p>Looking for  <strong>  Something  </strong>  Else?</p>
+            <p>Looking for Something Else?</p>
             <a href="#" class="submit-button">Submit Here</a>
         </div>  
     </main> 
@@ -365,10 +370,10 @@
         button.addEventListener('click', function() {
             if (video.paused) {
                 video.play();
-                button.textContent = 'Pause Video';
+              
             } else {
                 video.pause();
-                button.textContent = 'Play Video';
+               
             }
         });
     </script>
